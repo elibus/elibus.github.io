@@ -167,12 +167,51 @@
 
         .card-title {
           font-weight: 600!important;
-          font-size: 17px!important;
+          font-size: inherit!important;
           color: #008081!important;
+        }
+
+        .card-body {
+          padding: 10px!important;
         }
 
         .card-header {
           background-color: #eff3f4!important;
+          font-size: 14px!important;
+        }
+
+        .card-header+.card-body .card-header {
+          font-size: 12px!important;
+        }
+
+        .card-header+.card-body .card-header+.card-body .card-header{
+          font-size: 10px!important;
+        }
+
+        .formio-component-panel {
+          /* margin: 50px 20px; */
+        }
+
+        .formio-component-panel .formio-component-panel {
+          margin: 0;
+        }
+
+        .formio-component-panel.no-header > .card > .card-header {
+          display: none;
+        }
+
+        .form-control:disabled, .form-control[readonly] {
+          background-color: #FFF!important;
+        }
+
+        .container-fluid {
+          margin: 0;
+          padding: 0;
+        }
+
+        .with-borders {
+          padding-left: 10px!important;
+          padding-right: 10px!important;
         }
 
         @-webkit-keyframes spin {
