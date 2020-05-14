@@ -172,7 +172,7 @@
         }
 
         .card-body {
-          padding: 10px!important;
+          padding: 6px!important;
         }
 
         .card-header {
@@ -180,16 +180,32 @@
           font-size: 14px!important;
         }
 
+        .card-body * {
+          font-size: 14px!important;
+        }
+
         .card-header+.card-body .card-header {
           font-size: 12px!important;
         }
 
-        .card-header+.card-body .card-header+.card-body .card-header{
+        .card-header+.card-body .card-body * {
+          font-size: 12px!important;
+        }
+
+        .card-header+.card-body .card-header+.card-body .card-header {
           font-size: 10px!important;
         }
 
-        .formio-component-panel {
-          /* margin: 50px 20px; */
+        .card-header+.card-body .card-header+.card-body .card-body * {
+          font-size: 10px!important;
+        }
+
+        .form-group {
+          margin-bottom: 4px!important;
+        }
+
+        .form-group.formio-component-label-hidden {
+          margin-bottom: 0!important;
         }
 
         .formio-component-panel .formio-component-panel {
@@ -200,18 +216,13 @@
           display: none;
         }
 
-        .form-control:disabled, .form-control[readonly] {
+        .form-control:disabled, .form-control[readonly], .card-body.bg-light {
           background-color: #FFF!important;
         }
 
         .container-fluid {
           margin: 0;
           padding: 0;
-        }
-
-        .with-borders {
-          padding-left: 10px!important;
-          padding-right: 10px!important;
         }
 
         @-webkit-keyframes spin {
